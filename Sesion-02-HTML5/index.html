@@ -6,7 +6,7 @@
   <title>Escuelita de Natación</title>
   <meta name="description" content="Escuelita de Natación - ASONAT JALAPA">
   <meta name="author" content="Josseline Galeano">
-  <link rel="icon" href="img/image.png">
+  <link rel="icon" href="img/logo.png">
 </head>
 <body>
 
@@ -26,22 +26,25 @@
     <article>
       <h2>Bienvenido a la Escuelita de Natación</h2>
 
-      <!-- TODO: usa <figure> + <figcaption> para una imagen con alt y loading="lazy" -->
-      <img src="https://via.placeholder.com/800x400"
-           alt="Imagen de bienvenida"
-           width="800" height="400"
-           loading="lazy">
+      <figure>
+          <img src="img/aprender.png"
+                alt="Niños aprendiendo natación en una piscina"
+                width="800" height="400"
+                loading="lazy">
+        <figcaption>
+          Clases de natación enfocadas en aprendizaje, técnica y seguridad acuática.
+        </figcaption>
+      </figure>
 
       <p>
-        Nuestra escuelita de natacion está orientada a niños, jóvenes y adultos que desean aprender a nadar o mejorar su 
+        Nuestra escuelita de natación está orientada a niños, jóvenes y adultos que desean aprender a nadar o mejorar su 
         técnica. Contamos con programas para principiantes, intermedios y avanzados, promoviendo la seguridad, la disciplina
         y el desarrollo físico mediante la práctica de la natación.
       </p>
 
-      <!-- TODO: usa <dialog> + un boton con command/commandfor (Invoker Commands API) -->
       <dialog id="bienvenida">
-        <h3>Hola!</h3>
-        <p>Esto es un dialog modal nativo.</p>
+        <h3>Información de inscripción</h3>
+        <p>Conoce nuestros horarios disponibles y programas de aprendizaje para cada nivel.</p>
         <form method="dialog">
           <button>Cerrar</button>
         </form>
@@ -50,26 +53,30 @@
         Abrir dialog
       </button>
 
-      <!-- TODO: usa popover para un menu o tooltip -->
       <button popovertarget="menu-ayuda">?</button>
       <div id="menu-ayuda" popover>
-        <h4>Ayuda</h4>
-        <p>Contenido del popover...</p>
+        <h4>Recomendaciones</h4>
+        <p>Recuerda llevar traje de baño, gorra, lentes y una botella de agua para tus entrenamientos.</p>
       </div>
 
-      <!-- TODO: formulario con al menos 3 inputs (text, email, etc.) -->
       <form action="#" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input id="nombre" type="text" name="nombre" required minlength="3">
+         <label for="nivel">Nivel de natación:</label>
+         <select id="nivel" name="nivel" required>
+            <option value="">Seleccione un nivel</option>
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+          </select>
 
-        <label for="email">Email:</label>
-        <input id="email" type="email" name="email" required>
+          <label for="mensaje">Mensaje:</label>
+          <textarea 
+            id="mensaje" 
+            name="mensaje" 
+            rows="4"
+            placeholder="Escriba información adicional"></textarea>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
+          <button type="submit">Enviar inscripción</button>
+        </form>
     </article>
 
   <aside>
@@ -78,7 +85,7 @@
       <li>Niños</li>
       <li>Lunes a Viernes: 2:00 PM - 4:00 PM</li>
       <li>Adultos</li>
-      <li>Martes, Miercoles y Viernes: 6:00 AM - 8:00 AM</li>
+      <li>Martes, Miércoles y Viernes: 6:00 AM - 8:00 AM</li>
     </ul>
   </aside>
   </main>
