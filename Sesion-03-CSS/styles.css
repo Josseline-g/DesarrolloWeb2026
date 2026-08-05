@@ -1,4 +1,27 @@
-/* TODO: Reset y estilos base */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333333;
+    padding: 20px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #2c3e50;
+}
 
 /* TODO: Galería de productos */
 /* Desktop (>=1024px): 3 columnas usando CSS Grid */
