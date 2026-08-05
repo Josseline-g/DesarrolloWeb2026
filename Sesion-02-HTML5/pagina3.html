@@ -3,35 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Sitio — Pagina 2</title>
+  <title>Inscripciones</title>
+  <meta name="description" content="Formulario de inscripción a la escuelita de natación">
+  <meta name="author" content="Josseline Galenao">
+  <link rel="icon" href="img/logo.png">
 </head>
 <body>
   <header>
-    <h1>Mi Sitio</h1>
+    <h1>Escuelita de Natación</h1>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="pagina1.html">Pagina 1</a></li>
-        <li><a href="pagina2.html">Pagina 2</a></li>
-        <li><a href="pagina3.html">Pagina 3</a></li>
+        <li><a href="pagina1.html">Beneficios</a></li>
+        <li><a href="pagina2.html">Estilos</a></li>
+        <li><a href="pagina3.html">Inscripciones</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section>
-      <h2>Pagina 2</h2>
-      <p>TODO: contenido aqui.</p>
-      <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-      </ul>
+      <h2>Inscripciones</h2>
+      <p>Completa el siguiente formulario para inscribirte en la escuelita de natación:</p>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Datos del alumno</legend>
+          <label for="nombre">Nombre completo:</label><br>
+          <input type="text" id="nombre" name="nombre" required><br><br>
+          <label for="email">Correo electrónico:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="telefono">Teléfono:</label><br>
+          <input type="tel" id="telefono" name="telefono"><br><br>
+          <label for="nivel">Nivel de natación:</label><br>
+          <select id="nivel" name="nivel" required>
+            <option value="">Seleccione un nivel</option>
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+          </select><br><br>
+
+          <label for="horario">Horario preferido:</label><br>
+          <select id="horario" name="horario" required>
+            <option value="">Seleccione un horario</option>
+            <option value="mañana">Mañana</option>
+            <option value="tarde">Tarde</option>
+            <option value="noche">Noche</option>
+          </select><br><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Requisitos para el primer día</legend>
+          <ul>
+            <li>Traje de baño</li>
+            <li>Gorro de natación</li>
+            <li>Toalla</li>
+            <li>Botella de agua</li>
+          </ul>
+        </fieldset>
+
+        <br>
+        <button type="submit">Enviar inscripción</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Mi Sitio</p>
+    <p>&copy; 2026 Escuelita de Natación — ASONAT Jalapa</p>
   </footer>
 </body>
 </html>
